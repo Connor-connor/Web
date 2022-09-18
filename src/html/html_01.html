@@ -1,0 +1,348 @@
+<!DOCTYPE html> <!--文档类型声明标签,告诉浏览器这个页面采取html5版本来显示页面-->
+<html lang="en"> <!--根标签-->
+<head> <!--头部标签-->
+    <meta charset="UTF-8">
+    <title>标题标签</title> <!--标题标签-->
+</head>
+<body> <!--主体标签-->
+
+    <!--标题-->
+    <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <h3>三级标题</h3>
+    <h4>四级标题</h4>
+    <h5>五级标题</h5>
+    <h6>六级标题</h6>
+
+    <!--段落-->
+    <p>
+        段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签</p>
+
+    <!--换行-->
+    <p>换行符换行符换行符换行符换行符换行符换行符换行符换<br/>行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符换行符
+    </p>
+
+    <!--文本-->
+    <strong>加粗</strong> <!--或者--> <b>加粗</b>
+    <em> 倾斜 </em> <!--或者--> <i>倾斜</i>
+    <del> 删除线</del> <!--或者--> <s>删除线</s>
+    <ins> 下划线</ins> <!--或者--> <u>下划线</u>
+
+    <!--盒子-->
+    <div>一行一个大盒子</div>
+    <div>一行一个大盒子</div>
+    <span>一行可以多个小盒子</span> <span>一行可以多个小盒子</span>
+
+
+    <!--图像-->
+    <!--相对路径:
+        图像文件位于HTML文件同一级,如<img src="baidu.gif"/>
+        图像文件位于HTML文件下一级,如<img src="images/baidu.gif"/>
+        图像文件位于HTML文件上一级,如<img src="../baidu.gif"/>
+    绝对路径:
+        通常从盘符开始,例如 “D:\web\img\logo.gif”
+        或完整的网络地址 “http://www.itcast.cn/images/logo.gif”-->
+    <img src="images/img.jpg" alt="替换文本,图像不能显示时的文字" title="提示文本,鼠标放上去显示的文字" width="640"
+         height="419" border="12"/> <!--border(过时)图像边框粗细-->
+
+    <!--链接-->
+    <a href="https://www.baidu.com">外部链接</a>
+    <!--网站内部页面之间的相互链接，直接链接内部页面名称即可-->
+    1.外部链接: 例如 <a href="https://www.baidu.com">百度</a>
+    2.内部链接: 网站内部页面之间的相互链接，直接链接内部页面名称即可，例如 <a href="test_02.html">test_02</a>
+    3.空链接: 如果当时没有确定链接目标时，<a href="#"> 首页 </a>
+    4.下载链接: 如果 href 里面地址是一个文件或者压缩包，会下载这个文件
+    5.网页元素链接: 在网页中的各种网页元素，如文本、图像、表格、音频、视频等都可以添加超链接
+    6.锚点链接: 点我们点击链接,可以快速定位到页面中的某个位置
+    - 在链接文本的 href 属性中，设置属性值为 #名字 的形式，如<a href="#two"> 第2集 </a>
+    - 找到目标位置标签，里面添加一个 id 属性 = 刚才的名字 ，如：<h3 id="two">第2集介绍</h3>
+
+    <!--特殊字符-->
+    空格 &nbsp;
+    小于 &lt;
+    大于 &gt;
+
+    <!--表格-->
+    <table> <!--定义表格-->
+        <tr> <!--定义行(一对tr是一行)-->
+            <th>表头标签</th> <!--一般表头单元格位于表格的第一行或第一列，表头单元格里面的文本内容加粗居中显示-->
+            <td>单元格内的文字</td> <!--定义单元格-->
+            <td>普通单元格单元格里面可以放任何元素,文字链接图片等都可以</td> <!--定义单元格-->
+        </tr>
+    </table>
+    <img src="images/img.png" title="表格标签,实际不常用,后面通过css设置"/>
+    <!--因为表格可能很长,为了更好的表示表格的语义，可以将表格分割成 表格头部和表格主体两大部分.
+    在表格标签中，分别用：<thead>标签 表格的头部区域、<tbody>标签 表格的主体区域. 这样可以更好的分清表格结构。-->
+    <!--案例(折叠)-->
+    <table align="center" width="500" height="249" border="1" cellspacing="0">
+        <thead>
+        <tr>
+            <th>排名</th>
+            <th>关键词</th>
+            <th>趋势</th>
+            <th>进入搜索</th>
+            <th>最近七日</th>
+            <th>相关链接</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>鬼吹灯</td>
+            <td><img src="images/down.jpg"></td>
+            <td>456</td>
+            <td>123</td>
+            <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>鬼吹灯</td>
+            <td><img src="images/down.jpg"></td>
+            <td>456</td>
+            <td>123</td>
+            <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>西游记</td>
+            <td><img src="images/up.jpg"></td>
+            <td>456</td>
+            <td>123</td>
+            <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>鬼吹灯</td>
+            <td><img src="images/down.jpg"></td>
+            <td>456</td>
+            <td>123</td>
+            <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>鬼吹灯</td>
+            <td><img src="images/down.jpg"></td>
+            <td>456</td>
+            <td>123</td>
+            <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>鬼吹灯</td>
+            <td><img src="images/down.jpg"></td>
+            <td>456</td>
+            <td>123</td>
+            <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <!--合并单元格
+    跨行合并：rowspan="合并单元格的个数" 最上侧单元格为目标单元格, 写合并代码
+    跨列合并：colspan="合并单元格的个数" 最左侧单元格为目标单元格, 写合并代码-->
+
+    <!--列表-->
+    <ul>
+        <li>无序列表1</li>
+        <li>无序列表2</li>
+        <li>无序列表3</li>
+    </ul>
+    <ol>
+        <li>有序列表1</li>
+        <li>有序列表2</li>
+        <li>有序列表3</li>
+    </ol>
+    <dl>
+        <dt>关注我们</dt>
+        <dd>新浪微博</dd>
+        <dd>官方微信</dd>
+        <dd>联系我们</dd>
+        <dt>关注我们</dt>
+        <dd>新浪微博</dd>
+        <dd>官方微信</dd>
+        <dd>联系我们</dd>
+    </dl>
+    <!--<dl>标签用于定义描述列表（或定义列表），该标签会与 <dt>（定义项目/名字）和 <dd>（描述每一个项目/名字）一起使用-->
+    <!--li dt dd 里面可以包含任何标签-->
+
+    <!--表单-->
+    <form action=“url地址” method=“提交方式” name=“表单域名称">
+        <!--input标签-->
+        <input type="type属性的属性值"> <!--type属性的属性值--><img src="images/img_1.png">
+        <!--input其他属性--> <img src="images/img_2.png">
+        <!--text 文本框 用户可以里面输入任何文字-->
+        用户名：<input type="text" name="username" value="请输入用户名" maxlength="6"> <br>
+        <!--password 密码框 用户看不见输入的密码-->
+        密码：<input type="password" name="pwd"> <br>
+
+        <!--radio 单选按钮 可以实现多选一-->
+        <!--name 是表单元素名字 这里性别单选按钮必须有相同的名字name 才可以实现多选一-->
+        <!--单选按钮和复进框可以设置checked属生，当页面打开的时候就可以默认选中这个按钮一-->
+        性別：男 <input type="radio" name="sex" value=”男”> 女 <input type="radio" name=" sex" value="女">
+        <!--checkbox 复选框 可以实现多选-->
+        爱好：吃饭 <input type=" checkbox" name="hobby" value="吃饭">睡觉 <input type="checkbox" name="hobby"
+                                                                                value="吃饭"> <br>
+        <!--点击了提交按钮，可以把 表单域form 里面的表单元素 里面的值 提交给后合服务器-->
+        <input type="submit" value="免费注册">
+        <!--重置表单可以还原表单元素初始的默认状态-->
+        <input type="'reset" value="重新填写">
+        <!--普通按钮 button 后期结合css 搭配使用-->
+        <input type="button" value="获取短信验证码"> <br>
+        <!--文件域 使用场景 上传文件使用的-->
+        上传头像：<input type="file">
+
+        <!--label标签-->
+        <!--label标签为input元素定义标注（标签）。
+        label标签用于绑定一个表单元素,当点击label标签内的文本时，浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上,用来增加用户体验.
+        核心：label标签的 for 属性应当与相关元素的 id 属性相同-->
+        <label for="sex">男</label>
+        <input type="radio" name="sex" id="sex"/>
+
+        <!--select标签-->
+        <select>
+            <option>选项1</option>
+            <option>选项2</option>
+            <option selected="selected">选项3</option>
+        </select>
+
+        <!--textarea标签-->
+        <textarea rows="3" cols="20">文本内容</textarea>
+
+        <!--表单元素我们学习了三大组 input 输入表单元素 select 下拉表单元素 textarea 文本域表单元素.
+        这三组表单元素都应该包含在form表单域里面,并且有 name 属性-->
+    </form>
+
+    <!--综合案例(折叠)-->
+    <form>
+        <table width="600">
+            <!-- 第一行 -->
+            <tbody>
+            <tr>
+                <td>性别:</td>
+                <td>
+                    <input type="radio" name="sex" id="nan"> <label for="nan"> <img src="images/man.jpg"> 男
+                </label>
+                    <input type="radio" name="sex" id="nv"> <label for="nv"><img src="images/women.jpg">
+                    女</label>
+                </td>
+            </tr>
+            <!-- 第二行 -->
+            <tr>
+                <td>生日:</td>
+                <td>
+                    <select>
+                        <option>--请选择年份--</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                    </select>
+                    <select>
+                        <option>--请选择月份--</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <select>
+                        <option>--请选择日--</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+
+                </td>
+            </tr>
+            <!-- 第三行 -->
+            <tr>
+                <td>所在地区</td>
+                <td><input type="text" value="北京思密达"></td>
+            </tr>
+            <!-- 第四行 -->
+            <tr>
+                <td>婚姻状况:</td>
+                <td>
+                    <input type="radio" name="marry" checked="checked">未婚 <input type="radio" name="marry"> 已婚
+                    <input
+                            type="radio" name="marry"> 离婚
+                </td>
+            </tr>
+            <!-- 第五行 -->
+            <tr>
+                <td>学历:</td>
+                <td><input type="text" value="博士后"></td>
+            </tr>
+            <!-- 第六行 -->
+            <tr>
+                <td>喜欢的类型:</td>
+                <td>
+                    <input type="checkbox" name="love"> 妩媚的
+                    <input type="checkbox" name="love"> 可爱的
+                    <input type="checkbox" name="love"> 小鲜肉
+                    <input type="checkbox" name="love"> 老腊肉
+                    <input type="checkbox" name="love" checked="checked"> 都喜欢
+                </td>
+            </tr>
+            <!-- 第七行 -->
+            <tr>
+                <td>个人介绍</td>
+                <td>
+                    <textarea>个人简介</textarea>
+                </td>
+            </tr>
+            <!-- 第八行 -->
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="免费注册">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" checked="checked"> 我同意注册条款和会员加入标准
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="#"> 我是会员，立即登录</a>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <h5>我承诺</h5>
+                    <ul>
+                        <li>年满18岁、单身</li>
+                        <li>抱着严肃的态度</li>
+                        <li>真诚寻找另一半</li>
+                    </ul>
+                </td>
+            </tr>
+
+            </tbody>
+
+        </table>
+    </form>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
