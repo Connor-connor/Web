@@ -42,7 +42,7 @@ div,
 
 /*链接伪类选择器*/
 a:link { /*没有点击过的(访问过的)链接*/
-    color: #333;
+    color: blue;
     text-decoration: none;
 }
 

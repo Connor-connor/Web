@@ -1,0 +1,41 @@
+.nav a {
+    display: inline-block;
+    width: 120px;
+    height: 58px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 48px;
+
+}
+.nav .nav1 {
+    background: url(images/bg1.png) no-repeat;
+}
+.nav .nav1:hover {
+    background: url(images/bg11.png) no-repeat;
+}
+
+.nav .nav2 {
+    background: url("images/bg2.png") no-repeat;
+}
+.nav .nav2:hover {
+    background: url("images/bg22.png") no-repeat;
+}
+.nav .nav3 {
+    background: url("images/bg3.png") no-repeat;
+}
+.nav .nav3:hover {
+    background: url("images/bg3.jpg") no-repeat;
+}
+.nav .nav4 {
+    background: url("images/bg4.png") no-repeat;
+}
+.nav .nav4:hover {
+    background: url("images/bg11.png") no-repeat;
+}
+.nav .nav5 {
+    background: url("images/bg5.png") no-repeat;
+}
+.nav .nav5:hover {
+    background: url("images/bg22.png") no-repeat;
+}
